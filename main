@@ -1,0 +1,19 @@
+#revisited hangman game in Python
+
+import random
+random_word = ['angry', 'hungry', 'python', 'happy', 'rats', 'African Rain Toad']
+
+# picks a random word
+word = random.choice(random_word)
+
+#Game Loop
+print('Guess the possible word')
+print('angry', 'hungry', 'python', 'happy', 'rats', 'African Rain Toad')
+
+while True:
+    answer = input()
+    if answer == word:
+        print(f'congrats! You got it. The answer was {word}')
+        break
+    else:
+        print('Wrong! You should keep trying')
